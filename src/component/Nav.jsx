@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { RiShoppingBag3Line } from "react-icons/ri";
-
+import { food_items } from "../food";
+import { DishContext } from "./DishProvider";
 
 function Nav() {
+  const {cart} = useContext(DishContext);
+  
   return (
     <div className="w-full h-[100px] flex justify-between items-center p-5 md:p-8 ">
         <div className="w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl">
@@ -15,8 +18,8 @@ function Nav() {
 <input type="text" placeholder="Search Item..." className="w-[100%] outline-none"/>
         </form>
         <div className="w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl relative">
-            <span className="absolute top-0 right-2 text-green-500 font-bold text-[18px]">0</span>
-            <RiShoppingBag3Line className="w-[30px]  h-[30px]  text-green-500"  />
+            <span className="absolute top-0 right-2 text-green-500 font-bold text-[18px]">{cart}</span>
+            <button><RiShoppingBag3Line className="w-[30px]  h-[30px]  text-green-500"  /></button>
         </div>
 
 

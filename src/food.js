@@ -48,6 +48,5 @@ export let food_items = [
     {"id": 21, "food_name": "Hash Browns", "food_category": "breakfast", "food_type": "veg", "food_quantity": 1, "food_image": image21, "price": 249},
     {"id": 22, "food_name": "Vegetable Soup", "food_category": "soups", "food_type": "veg", "food_quantity": 1, "food_image": image22, "price": 329},
     {"id": 23, "food_name": "Egg Fried Rice", "food_category": "main_course", "food_type": "non_veg", "food_quantity": 1, "food_image": image23, "price": 599},
-    {"id": 24, "food_name": "Hawaiian Pizza", "food_category": "pizza", "food_type": "non_veg", "food_quantity": 1, "food_image": image24, "price": 799},
-    {"id": 25, "food_name": "Pasta Primavera", "food_category": "pasta", "food_type": "veg", "food_quantity": 1, "food_image": image25, "price": 899}
+    {"id": 24, "food_name": "Hawaiian Pizza", "food_category": "pizza", "food_type": "non_veg", "food_quantity": 1, "food_image": image24, "price": 799}
 ];
