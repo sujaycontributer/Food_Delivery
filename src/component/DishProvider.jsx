@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react'
 
+// context for added dishe in cart 
 export const DishContext = createContext();
 
 function DishProvider({children}) {
