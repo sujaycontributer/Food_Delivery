@@ -24,7 +24,7 @@ return(
               <div className="text-green-500 text-lg font-bold  ">Rs {price}/-</div>
               <div className="flex justify-center items-center gap-3 text-green-500">{type==="veg"?<LuLeafyGreen />:<GiChickenOven className="text-red-600" />}<span className="text-green-500">{type}</span></div>
        </div>
-       <button className="w-full p-4  bg-green-600 rounded-lg shadow-xl text-white font-bold hover:bg-green-400 transition-all" onClick={setCart(p => p+1)}>Add to dish</button>
+       <button className="w-full p-4  bg-green-600 rounded-lg shadow-xl text-white font-bold hover:bg-green-400 transition-all" onClick={handler}>Add to dish</button>
     </div>
 )}
 
