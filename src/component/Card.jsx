@@ -6,6 +6,7 @@ import { DishContext } from "./DishProvider";
 
 function Card({name,image,id,price,type}){
    const {cart, setCart, dishes, setDishes} = useContext(DishContext);
+   // handler for add to cart and increament the cart number
    const handler = () => {
        setDishes([...dishes, {id, name, price, type}]);
        setCart(p => p+1);
